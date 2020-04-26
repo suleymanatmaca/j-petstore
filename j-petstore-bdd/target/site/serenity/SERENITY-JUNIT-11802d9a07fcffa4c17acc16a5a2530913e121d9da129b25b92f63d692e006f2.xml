@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="3" failures="0" name="Purchase pets from the store" skipped="0" tests="3" time="67.45" timestamp="2020-04-26 05:16:51"><testcase name=""><error message="Expected condition failed: waiting for Expecting element is displayed: By.xpath: //input[@name='keyword'] (tried for 15 second(s) with 50 milliseconds interval)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'VTEKLSATMACA', ip: '100.109.9.240', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_181'&#10;Driver info: driver.version: unknown&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'VTEKLSATMACA', ip: '100.109.9.240', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_181'&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.TimeoutException">Expected condition failed: waiting for Expecting element is displayed: By.xpath: //input[@name='keyword'] (tried for 15 second(s) with 50 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'VTEKLSATMACA', ip: '100.109.9.240', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: driver.version: unknown
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'VTEKLSATMACA', ip: '100.109.9.240', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: driver.version: unknown</error><system-err>Expected condition failed: waiting for Expecting element is displayed: By.xpath: //input[@name='keyword'] (tried for 15 second(s) with 50 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'VTEKLSATMACA', ip: '100.109.9.240', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: driver.version: unknown
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'VTEKLSATMACA', ip: '100.109.9.240', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: driver.version: unknown&#13;
+com.jpetstore.pages.BasePage.searchForProduct(BasePage.java:124)&#13;
+com.jpetstore.cucumber.steps.serenity.PetStoreSteps.searchForProduct(PetStoreSteps.java:78)&#13;
+com.jpetstore.cucumber.steps.UserRegistrationSteps.i_search_for_a_Bulldog_it_must_show_up_in_the_search_results(UserRegistrationSteps.java:114)&#13;
+✽.i search for a Bulldog it must show up in the search results(src/test/resources/features/orders.feature:11)&#13;
+</system-err></testcase><testcase name="As user, I want to view the Pet Types"><error message="Expected condition failed: waiting for Expecting element is displayed: By.xpath: //input[@name='keyword'] (tried for 15 second(s) with 50 milliseconds interval)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'VTEKLSATMACA', ip: '100.109.9.240', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_181'&#10;Driver info: driver.version: unknown&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'VTEKLSATMACA', ip: '100.109.9.240', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_181'&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.TimeoutException">Expected condition failed: waiting for Expecting element is displayed: By.xpath: //input[@name='keyword'] (tried for 15 second(s) with 50 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'VTEKLSATMACA', ip: '100.109.9.240', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: driver.version: unknown
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'VTEKLSATMACA', ip: '100.109.9.240', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: driver.version: unknown</error><system-err>Expected condition failed: waiting for Expecting element is displayed: By.xpath: //input[@name='keyword'] (tried for 15 second(s) with 50 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'VTEKLSATMACA', ip: '100.109.9.240', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: driver.version: unknown
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'VTEKLSATMACA', ip: '100.109.9.240', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: driver.version: unknown&#13;
+com.jpetstore.pages.BasePage.searchForProduct(BasePage.java:124)&#13;
+com.jpetstore.cucumber.steps.serenity.PetStoreSteps.searchForProduct(PetStoreSteps.java:78)&#13;
+com.jpetstore.cucumber.steps.UserRegistrationSteps.i_search_for_a_Bulldog_it_must_show_up_in_the_search_results(UserRegistrationSteps.java:114)&#13;
+✽.i search for a Bulldog it must show up in the search results(src/test/resources/features/orders.feature:25)&#13;
+</system-err></testcase></testsuite>

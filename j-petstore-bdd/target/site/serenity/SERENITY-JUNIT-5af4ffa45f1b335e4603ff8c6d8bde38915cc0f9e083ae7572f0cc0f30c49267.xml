@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="User Registration to the pet-store application" skipped="0" tests="1" time="32.73" timestamp="2020-04-26 05:18:33"><testcase name="As a shopper, I need to register myself as a new user to the pet-store application"><failure message="Expected enabled element was not enabled&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'VTEKLSATMACA', ip: '100.109.9.240', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_181'&#10;Driver info: driver.version: unknown" type="net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException">Expected enabled element was not enabled
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'VTEKLSATMACA', ip: '100.109.9.240', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: driver.version: unknown</failure><system-err>Expected enabled element was not enabled
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'VTEKLSATMACA', ip: '100.109.9.240', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: driver.version: unknown&#13;
+com.jpetstore.pages.AccountsPage.addAccountInformation(AccountsPage.java:95)&#13;
+com.jpetstore.cucumber.steps.serenity.PetStoreSteps.addAccountInformation(PetStoreSteps.java:142)&#13;
+com.jpetstore.cucumber.steps.UserRegistrationSteps.i_add_account_information(UserRegistrationSteps.java:67)&#13;
+✽.I add account information(src/test/resources/features/user-registration.feature:6)&#13;
+</system-err></testcase></testsuite>
