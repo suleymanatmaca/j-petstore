@@ -14,7 +14,7 @@ import java.util.List;
 
 import org.openqa.selenium.WebElement;
 
-public class ProductsPage extends BasePage {
+public class 	ProductsPage extends BasePage {
 
 	private static final String PRODUCT_TABLE = "//*[@id='Catalog']//table";
 	
@@ -54,7 +54,7 @@ public class ProductsPage extends BasePage {
 		
 		$(PRODUCT_TABLE).shouldContainText(specificProductName);
 		
-		String addToCartP1 = "']//parent::tr//a[contains(@href,'addItemToCart')]";
+		String addToCartP1 = "']//parent::tr//a[contains(text(),'Add to Cart')]";
 		
 		String addToCartButton =  ANCHOR + specificProductName + addToCartP1;
 		

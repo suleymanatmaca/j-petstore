@@ -3,29 +3,29 @@ package com.jpetstore.pages;
 public class OrdersPage extends BasePage {
 	
 
-	private static final String FIRST_NAME_INPUT = "//*[@id='Catalog']//input[@name='order.billToFirstName']";
+	private static final String FIRST_NAME_INPUT = "//*[@id='Catalog']//input[@name='billToFirstName']";
 	
-	private static final String LAST_NAME_INPUT = "//*[@id='Catalog']//input[@name='order.billToLastName']";
+	private static final String LAST_NAME_INPUT = "//*[@id='Catalog']//input[@name='billToLastName']";
 	
-	private static final String ADDR1_INPUT = "//*[@id='Catalog']//input[@name='order.billAddress1']";
+	private static final String ADDR1_INPUT = "//*[@id='Catalog']//input[@name='billAddress1']";
 		
-	private static final String ADDR2_INPUT = "//*[@id='Catalog']//input[@name='order.billAddress2']";
+	private static final String ADDR2_INPUT = "//*[@id='Catalog']//input[@name='billAddress2']";
 
-	private static final String CITY_INPUT = "//*[@id='Catalog']//input[@name='order.billCity']";
+	private static final String CITY_INPUT = "//*[@id='Catalog']//input[@name='billCity']";
 		
-	private static final String STATE_INPUT = "//*[@id='Catalog']//input[@name='order.billState']";
+	private static final String STATE_INPUT = "//*[@id='Catalog']//input[@name='billState']";
 	
-	private static final String ZIP_INPUT = "//*[@id='Catalog']//input[@name='order.billZip']";
+	private static final String ZIP_INPUT = "//*[@id='Catalog']//input[@name='billZip']";
 
-	private static final String COUNTRY_INPUT = "//*[@id='Catalog']//input[@name='order.billCountry']";
+	private static final String COUNTRY_INPUT = "//*[@id='Catalog']//input[@name='billCountry']";
 		
 	private static final String CONTINUE_BUTTON = "//*[@id='Catalog']//input[@value='Continue']";
 	
-	private static final String CARDTYPE_INPUT = "//*[@id='Catalog']//select[@name='order.cardType']";
+	private static final String CARDTYPE_INPUT = "//*[@id='Catalog']//select[@name='cardType']";
 	
-	private static final String CARD_NUMBER_INPUT = "//*[@id='Catalog']//input[@name='order.creditCard']";
+	private static final String CARD_NUMBER_INPUT = "//*[@id='Catalog']//input[@name='creditCard']";
 		
-	private static final String EXPIRY_DATE_INPUT = "//*[@id='Catalog']//input[@name='order.expiryDate']";
+	private static final String EXPIRY_DATE_INPUT = "//*[@id='Catalog']//input[@name='expiryDate']";
 	
 	private static final String SHIP_TO_DIFF_ADDRESSS = "//input[@name='shippingAddressRequired']";
 	
@@ -50,7 +50,9 @@ public class OrdersPage extends BasePage {
 	
 
 	private static final String CONFIRM_BUTTON = "div[id='Catalog'] a[href*='confirmed']";
-	
+
+	private static final String SUBMIT_BUTTON = "div[id='Catalog'] input[value*='Submit']";
+
 	private static final String ORDER_CONFIRMATION_LABEL = "#Content > ul > li";
 	
 	
@@ -164,9 +166,9 @@ public class OrdersPage extends BasePage {
 	 */
 	public OrdersPage clickOnConfirmBtn(){
 		
-		waitForTextToAppear("Please confirm the information below and then press continue...");
+		waitForTextToAppear("Please confirm the information below and then press submit...");
 		
-		waitFor(CONFIRM_BUTTON).$(CONFIRM_BUTTON).click();
+		waitFor(SUBMIT_BUTTON).$(SUBMIT_BUTTON).click();
 		return this;
 	}
 	

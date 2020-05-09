@@ -22,7 +22,7 @@ public class BasePage  extends PageObject{
 
 	private static final String SHOPPING_CART_LINK = "div[id='MenuContent'] a[href$='?viewCart=']";
 
-	private static final String SEARCH_INPUT = "//input[@name='keyword']";
+	private static final String SEARCH_INPUT = "//input[@name='keywords']";
 
 	private static final String SEARCH_BUTTON = "//input[@value='Search']";
 

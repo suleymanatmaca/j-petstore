@@ -6,6 +6,7 @@ import java.util.List;
 
 import com.github.javafaker.Faker;
 import com.jpetstore.cucumber.steps.serenity.PetStoreSteps;
+import com.jpetstore.helpers.DataHelper;
 import com.jpetstore.utils.PetCategories;
 
 import cucumber.api.DataTable;
@@ -71,7 +72,7 @@ public class UserRegistrationSteps {
 	@Given("^I add profile information$")
 	public void i_add_profile_information() {
 
-		shopper.addProfileInformation("english", "DOGS", true, true);
+		shopper.addProfileInformation("English", "DOGS", true, true);
 	}
 
 	@Given("^I save my information$")
@@ -105,14 +106,18 @@ public class UserRegistrationSteps {
 	@Given("I Login to the application with valid (.*) and (.*)")
 	public void I_login_to_the_application(String userName, String password) throws InterruptedException {
 		shopper.navigateToLoginPage();
-		shopper.doLogin(userName, password);
+		shopper.doLogin(DataHelper.getDataParameter(userName), DataHelper.getDataParameter(password));
 	}
 
 	@When("^i search for a (.*) it must show up in the search results$")
 	public void i_search_for_a_Bulldog_it_must_show_up_in_the_search_results(String petType) {
 		
 		shopper.searchForProduct(petType);
-		shopper.selectProductFromSearchTable(petType);
+	}
+
+	@And("^I select (.*)$")
+	public void i_Select_PetName(String petName) {
+		shopper.selectProductFromSearchTable(petName);
 	}
 
 	@When("^I view details about the pet (>*) and add it to cart$")
@@ -167,5 +172,6 @@ public class UserRegistrationSteps {
 			shopper.navigateToProductCategory(PetCategories.valueOf(s));
 		}
 	}
+
 
 }
